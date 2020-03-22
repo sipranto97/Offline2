@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/title1"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Visiting"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:textSize="70sp"
+       android:paddingLeft="60dp"
+       android:textColor="#1EB300"
+       android:fontFamily="casual"
+       />
+    <TextView
+        android:layout_below="@id/title1"
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Places"
+        android:paddingLeft="50dp"
+        android:textStyle="bold"
+        android:textSize="70sp"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:fontFamily="casual"
+        />
+    <AbsoluteLayout
+        android:id="@+id/abs1"
+        android:layout_below="@id/title2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/icon1"
+
+            android:layout_below="@id/title2"
+            android:layout_x="235px"
+            android:layout_y="000px"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+
+
+            />
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_y="400px"
+            android:layout_x="285px"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:text="Continue"
+            android:onClick="onClick"
+            />
+
+    </AbsoluteLayout>
+
+
+
+
+
+
+</RelativeLayout>
